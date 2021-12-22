@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ邮箱</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            width: auto;
+            height: 62px;
+            border-bottom: 1px rgb(214, 223, 234) solid;
+            background-color: rgb(239, 244, 250);
+        }
+
+        .img {
+            margin-left: 16px;
+            margin-top: 1.5px;
+            height: 60px;
+        }
+
+        .list {
+            float: right;
+            padding-right: 40px;
+            margin-top: 20px;
+            height: 29px;
+        }
+
+        .list a {
+            font-size: 12px;
+            color: #1d5494;
+            text-decoration: none;
+        }
+
+        .list span {
+            font-size: 12px;
+            color: #B6B6B6;
+        }
+        main{
+            height: 630px;
+        }
+        .box1{
+            height: 202px;
+            width: 310px;
+            float: left;
+            margin-left: 280px;
+            margin-top: 90px;
+        }
+        .box1 a{
+            font-size: 12px;
+            text-decoration: none;
+            color:grey;
+        }
+        .box1 a:hover{
+            text-decoration: underline;
+        }
+        .box1 div{
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+        .box1 .laiyuan{
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+        .first{
+            margin-bottom: 0px;
+            font-size: 24px;
+            font-weight: normal;
+            color: #6f95c8;
+        }
+        .box2{
+            float: left;
+            margin-top: 150px;
+            margin-left: -180px;
+        }
+        .box3{
+            height: 387px;
+            width: 333px;
+            float: left;
+            margin-top: 70px;
+            margin-left: 80px;
+            border:1px rgb(160,177,196) solid;
+        }
+        .box3>a{
+            text-decoration: none;
+        }
+        .weixin{
+            width: 167px;
+            height: 49px;
+            background-color: #F9FBFE;
+            text-align: center;
+            line-height: 49px;
+            float: left;
+            border-bottom: 1px rgb(160,177,196) solid;
+            color: #B6B6B6;
+        }
+        .weixin:hover{
+            color: black;
+        }
+        .QQ{
+            width: 167px;
+            height: 49px;
+            background-color: #F9FBFE;
+            text-align: center;
+            line-height: 49px;
+            border-bottom: 1px rgb(160,177,196) solid;
+            float: right;
+            color: black;
+            margin-top: -49px;
+        }
+        .QQ:hover{
+            color: black;
+        }
+        .n1{
+            clear: both;
+            width: 333px;
+            height: 235px;
+            margin-top: 89px;
+        }
+        .n1::before{
+            content: '';
+            display: table;
+        }
+        .n2{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 282px;
+            border: 1px rgb(160,177,196) solid;
+            font-size: 14px;
+            margin: 0px 10px 0px 25px;
+            color: #B6B6B6;
+        }
+        .n3{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 282px;
+            border: 1px rgb(160,177,196) solid;
+            font-size: 14px;
+            margin: 15px 10px 0px 25px;
+            color: #B6B6B6;
+        }
+        .n1 div{
+            height: 27.75px;
+            line-height: 27.75px;
+        }
+        .n4{
+            margin-top: 25px;
+            margin-left: 24px;
+        }
+        .n4 a{
+            display: table;
+            height: 18px;
+            width: 18px;
+            border: 1px #B6B6B6 solid;
+            font-size: 20px;
+            text-decoration: none;
+            float: left;
+        }
+        .n4 span{
+            /* padding-top: -10px; */
+            margin-top: -4px;
+            display: block;
+            font-size: 12px;
+            /* clear: both; */
+            float: left;
+            /* background-color: aqua; */
+        }
+        .n6{
+            background-color: #5a98de;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            width: 282px;
+            margin: 6px auto 0;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+        .n6:hover{
+            background-color:rgba(90,152,222,0.9);
+        }
+        .fast{
+            /* background-color: #5a98de; */
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+        }
+        .fast>a{
+            text-decoration: none;
+            color: #3C699F;
+        }
+        .n7{
+            margin-top: 30px;
+        }
+        .a1{
+            text-decoration: none;
+            margin-left: 29px;
+            font-size: 12px;
+            color: #225592;
+        }
+        .a2{
+            text-decoration: none;
+            font-size: 12px;
+            color: #225592;
+            float: right;
+            margin-top: 2.2px;
+            margin-right: 29px;
+        }
+        .bottom{
+            height: 40px;
+            background-color: rgb(239, 244, 250);
+            border-top: 1px rgb(214, 223, 234) solid;
+            text-align: center;
+            line-height: 35px;
+        }
+        .bottom a{
+            font-size: 12px;
+            text-decoration: none;
+            color: #1d5494;
+        }
+        .bottom span{
+            font-size: 12px;
+            color: #B6B6B6;
+        }
+        .bottom .wenzi{
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://mail.qq.com/">
+            <img class="img" src="标题图标.png" alt="">
+        </a>
+        <div class="list">
+            <a href="https://ui.ptlogin2.qq.com/cgi-bin/login?style=9&appid=522005705&daid=4&s_url=https://wap.mail.qq.com/login/login?auth_type=3&hln_css=http%3A%2F%2Fmail.qq.com%2Fzh_CN%2Fhtmledition%2Fimages%2Flogo%2Fqqmail%2Fqqmail_logo_default_200h.png&low_login=1&hln_autologin=%E8%AE%B0%E4%BD%8F%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81" target="_blank">基本版</a>
+            <span>|</span>
+            <a href="https://en.mail.qq.com/" target="_blank">English</a>
+            <span>|</span>
+            <a href="https://app.mail.qq.com/" target="_blank">手机版</a>
+            <span>|</span>
+            <a href="https://exmail.qq.com/?referrer=index_top" target="_blank">企业邮箱</a>
+        </div>
+    </header>
+    <main>
+        <div class="box1">
+            <p class="first">QQ邮箱，常联系!</p><br>
+            <div>没有什么能够阻挡</div>
+            <div>你对自由的向往</div>
+            <div>天马行空的生涯</div>
+            <div>你的心了无牵挂</div>
+            <div class="laiyuan">摘自《蓝莲花》</div>
+            <div><a href="https://y.qq.com/n/ryqq/singer/00235pCx2tYjlq" target="_blank">听更多许巍音乐</a></div>
+        </div>
+        <div class="box2">
+            <img src="标识1.png" width="350" alt="">
+        </div>
+        <div class="box3">
+            <a href="#"><div class="weixin">微信登录</div></a>
+            <a href="#"><div class="QQ">QQ登录</div></a>
+            <div class="n1">
+                <input class="n2" placeholder="&nbsp;支持QQ号/邮箱/手机号登录">
+                <input class="n3" placeholder="&nbsp;密码">
+                <div class="n4">
+                    <a href="#"></a>
+                    <span>&nbsp;下次自动登录</span>
+                </div>
+                <a class="n5" href="#">
+                <div class="n6">登&nbsp;录</div>
+                </a>
+                <div class="fast">
+                    <a href="#">扫码快捷登录</a>
+                </div>
+            </div>
+            <div class="n7">
+                <div class="forget">
+                    <a class="a1" href="https://accounts.qq.com/find/password">忘了密码？</a>
+                    <a class="a2" href="https://ssl.zc.qq.com/v3/index-chs.html">注册新账号</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bottom">
+            <a href="https://www.tencent.com/zh-cn" target="_blank">关于腾讯</a>&nbsp;<span>|</span>
+            <a href="https://mail.qq.com/cgi-bin/readtemplate?check=false&t=mail_clause" target="_blank">服务条款</a>&nbsp;<span>|</span>
+            <a href="https://wx.mail.qq.com/list/readtemplate?name=app_intro.html#/agreement/appPolicy" target="_blank">隐私政策</a>&nbsp;<span>|</span>
+            <a href="https://kf.qq.com/product/email.html">客服中心</a>&nbsp;<span>|</span>
+            <a href="https://mail.qq.com/zh_CN/contact_us.html" target="_blank">联系我们</a>&nbsp;<span>|</span>
+            <a href="https://service.mail.qq.com/" target="_blank">帮助中心</a>&nbsp;<span>|</span>
+            <span class="wenzi">©1998 - 2021 Tencent Inc. All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>
